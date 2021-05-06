@@ -38,11 +38,13 @@ class App extends Component {
   }
 
   render() {
+    const arr = this.cityList.filter(ele=> ele.country==='India');
+    console.log(arr);
     return (
       <div id="main">
         {/* Do not remove the main div */}
-              <ol>
-          {this.cityList.map(ele=><li key={ele.id}>{ele.name} {ele.country}</li>)}
+        <ol>
+         { arr.map(ele =><li key={ele.id}>{ele.name}</li> )}
         </ol>
       </div>
     )
