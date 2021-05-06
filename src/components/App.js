@@ -39,7 +39,7 @@ class App extends Component {
 
   render() {
     const arr = this.cityList.filter(ele=> ele.country==='India');
-    let i=0;
+    let i=1;
     return (
       <div id="main">
         {/* Do not remove the main div */}
