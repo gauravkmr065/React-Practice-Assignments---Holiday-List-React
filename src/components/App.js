@@ -42,7 +42,7 @@ class App extends Component {
     let i=1;
     return (
       <div id="main">
-        <ol key={i++} type="1">
+        <ol key={`location${i++}`}>
          {arr.map(ele =><li key={`location${i++}`}>{ele.name}</li>)}
         </ol>
       </div>
